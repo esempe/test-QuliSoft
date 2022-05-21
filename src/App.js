@@ -1,30 +1,20 @@
 import './App.css';
 import React from 'react';
+import PhotoItem from "./components/photoItem";
+import {Route,Routes} from "react-router-dom";
+import AppWrapper from "./components/appWrapper";
+import SinglePhoto from "./components/singlePhoto";
 
+//720×1280
 function App() {
-  return (
-    <div className="AppWrapper">
-            <div className="title">Unslpash Gallery</div>
-        <div className="photoList">
-            <div className="photoItem">
-                <div className="photoTitle">
-                    Photo From NY
-                </div>
-                <div className="imgWrapper">
-                    <img src="#" alt="null"/>
-                    <div className="photoCreator">
-                        Albert Einstein
-                    </div>
-                </div>
-
-            </div>
-
-
+    return (
+        <div className="globalWrapper">
+            <Routes>
+                <Route path="/" element={<AppWrapper/>}/>
+                <Route path="/1" element={<SinglePhoto/>}/>
+            </Routes>
         </div>
-
-
-    </div>
-  );
+    );
 }
 
 export default App;
