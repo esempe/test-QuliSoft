@@ -1,0 +1,54 @@
+.AppWrapper {
+    width: 768px;
+    margin: 0   auto;
+    border: 1px solid red;
+    height: 100%;
+}
+
+.title {
+    width: 100%;
+    height: 95px;
+    font-weight: 400;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 9px 17px 6px rgba(0, 0, 0, 0.37);
+}
+.title{
+}
+.photoList {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+.photoItem {
+    height: 400px;
+}
+
+.photoTitle {
+    font-size: 36px;
+}
+.imgWrapper img{
+    display: block;
+    flex: 1 1 auto;
+}
+.imgWrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 358px;
+    background-color: green;
+}
+
+.photoCreator {
+    position: absolute;
+    bottom: 0px;
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+}
