@@ -1,16 +1,17 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-const PhotoItem = () => {
+const PhotoItem = ({title,creator,imgSrc,id}) => {
+
     return (
-        <NavLink to={'/1'} className="photoItem">
+        <NavLink to={`/${id}`} className="photoItem">
             <div className="photoTitle">
-                Photo From NY
+                {title}
             </div>
             <div className="imgWrapper">
-                <img src="#" alt="null"/>
+                <img src="imgSrc" alt="null"/>
                 <div className="photoCreator">
-                    Albert Einstein
+                    {creator}
                 </div>
             </div>
         </NavLink>
